@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXStarsView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "show stars view"
   s.homepage     = "http://zfx5130.me"
   s.license      = "MIT"
