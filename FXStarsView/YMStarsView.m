@@ -7,7 +7,6 @@
 //
 
 #import "YMStarsView.h"
-#import <Masonry.h>
 
 static const NSUInteger kDefaultStarCount = 20;
 static const CGFloat kDefalutCollectionViewItemSize = 4.0f;
@@ -166,9 +165,6 @@ UICollectionViewDelegateFlowLayout>
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self addSubview:self.collectionView];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self);
-    }];
     [self.collectionView registerClass:[StarsCollectionViewCell class]
             forCellWithReuseIdentifier:kResueIdentifierStarsCollectionViewCell];
 }
