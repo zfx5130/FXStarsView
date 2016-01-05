@@ -80,21 +80,21 @@ StarsViewDelegate>
 }
 
 - (CGFloat)verticalPaddingForStarsView:(YMStarsView *)starsView {
-    return 10.0f;
+    return 50.0f;
 }
 
 - (CGFloat)horizontalPaddingForStarsView:(YMStarsView *)starsView {
-    return 10.0f;
+    return 100.0f;
 }
 
 #pragma mark - StarsViewDataSource
 
 - (NSArray<NSNumber *> *)starRadiusesForStarsView:(YMStarsView *)starsView {
-    return @[@4, @5, @6, @2];
+    return @[@4, @5, @6, @2, @8 , @10];
 }
 
 - (NSUInteger)starCountForStarsView:(YMStarsView *)starsView {
-    return 15;
+    return 100;
 }
 
 @end
