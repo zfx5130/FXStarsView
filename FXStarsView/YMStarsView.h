@@ -69,7 +69,7 @@
 /**
  *  dataSource , if set the starsViewDateSource method, must be set the dataSource
  */
-@property (weak, nonatomic) id <StarsViewDataSource> dateSource;
+@property (weak, nonatomic) id <StarsViewDataSource> dataSource;
 
 /**
  *  delegate , if set the starsViewDelegate method, must be set the delegate

@@ -170,15 +170,15 @@ UICollectionViewDelegateFlowLayout>
 }
 
 - (NSUInteger)starCount {
-    if ([self.dateSource respondsToSelector:@selector(starCountForStarsView:)]) {
-        return [self.dateSource starCountForStarsView:self];
+    if ([self.dataSource respondsToSelector:@selector(starCountForStarsView:)]) {
+        return [self.dataSource starCountForStarsView:self];
     }
     return kDefaultStarCount;
 }
 
 - (NSArray<NSNumber *> *)starRadiuses {
-    if ([self.dateSource respondsToSelector:@selector(starRadiusesForStarsView:)]) {
-        return [self.dateSource starRadiusesForStarsView:self];
+    if ([self.dataSource respondsToSelector:@selector(starRadiusesForStarsView:)]) {
+        return [self.dataSource starRadiusesForStarsView:self];
     }
     return nil;
 }

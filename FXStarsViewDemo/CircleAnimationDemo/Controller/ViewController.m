@@ -63,7 +63,7 @@ StarsViewDelegate>
     //star
     self.starsView = [[YMStarsView alloc] initWithFrame:self.view.bounds];
     self.starsView.delegate = self;
-    self.starsView.dateSource = self;
+    self.starsView.dataSource = self;
     [self.view addSubview:self.starsView];
     [self.starsView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.and.bottom.equalTo(self.starsView.superview);
